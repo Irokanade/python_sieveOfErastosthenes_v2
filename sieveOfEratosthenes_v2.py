@@ -15,7 +15,7 @@ p = 2
 for p in range(2, n+1):
     if (prime[p] == True):
         result.append(p)
-        for i in range(p * p, n+1, p):
+        for i in range(p, n+1, p):
             prime[i] = False
 
 print(result)
